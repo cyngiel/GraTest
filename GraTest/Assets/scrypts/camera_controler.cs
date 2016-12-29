@@ -10,9 +10,9 @@ public class camera_controler : MonoBehaviour {
 
         Rigidbody rigidbody = sfera.GetComponent<Rigidbody>();
 
-        Vector3 vector = new Vector3(4f, -6f, -6f);
+        Vector3 vector = new Vector3(4f, -4f, -3f);
         float predkosc = rigidbody.velocity.sqrMagnitude;
-        vector = (1F + predkosc/25) * vector;
+        vector = (1F + predkosc/30) * vector;
 
         Vector3 newPosition = sfera.position - (vector);
 
